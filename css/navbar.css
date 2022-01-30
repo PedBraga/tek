@@ -1,0 +1,31 @@
+
+/* All CSS code related to navbar is here */
+.navbar{
+    margin-top: 15px;
+}
+.dropdown-menu{
+    background-color: white; 
+    border: none;
+}
+
+
+.nav-link{
+    color: #535c64;
+    
+}
+
+.nav-item a{
+    font-size: 1rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #111;
+}
+
+.stonetek-logo{
+    height: 30px;
+    width: auto;
+    
+}

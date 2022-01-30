@@ -1,0 +1,35 @@
+:root{
+
+    --blue: #0001FE;
+    --stormgray:#6A6C7A;
+
+    --graywater: #ebebeb;
+    --bolder: #757575;
+
+  
+  }
+
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+ 
+
+
+body{
+  margin: 0;
+  margin: 0 auto !important; 
+  max-width: 1740px;
+  background-color: #f2f2f2;
+ 
+}
+
+img{
+    max-width:  100%;
+    display: block;
+   
+  }
