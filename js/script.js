@@ -36,3 +36,10 @@ for (var pg = 0, pgl = processGraphs.length; pg < pgl; pg++) {
 
 
 
+// maintnace and care page
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
