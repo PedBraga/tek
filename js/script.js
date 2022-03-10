@@ -37,10 +37,10 @@ for (var pg = 0, pgl = processGraphs.length; pg < pgl; pg++) {
 
 
 // maintnace and care page
-$(function() {
-  $('a[href*=#]').on('click', function(e) {
+$(function () {
+  $('a[href*=#]').on('click', function (e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
   });
 });
 
@@ -55,7 +55,7 @@ $(function() {
 
 
 
-// Products section
+// Products PAGE
 const activeImage = document.querySelector(".product-image .active");
 const productImages = document.querySelectorAll(".image-list img");
 const navItem = document.querySelector('a.toggle-nav');
@@ -64,9 +64,15 @@ function changeImage(e) {
   activeImage.src = e.target.src;
 }
 
-function toggleNavigation(){
+function toggleNavigation() {
   this.nextElementSibling.classList.toggle('active');
 }
 
 productImages.forEach(image => image.addEventListener("click", changeImage));
 navItem.addEventListener('click', toggleNavigation);
+
+
+
+// Resources PAGE
+
+

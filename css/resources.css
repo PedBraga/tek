@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+:root {
+  --blue: #0001FE;
+  --stormgray:#6A6C7A;
+  --graywater: #ebebeb;
+  --bolder: #757575;
+  --shadow: 0 1px 4px rgba(104,104,104,0.8);
+}
+
+body {
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+h1 {
+  margin-top: 2rem;
+  position: relative;
+  font-size: 2rem;
+  color: var(--bolder);
+}
+
+h1::before {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+h1:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background-color: var(--graywater);
+  z-index: -1;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.gallery-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 4em;
+}
+
+@media (max-width: 960px) {
+  .gallery-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 70vh;
+  }
+}
+
+.item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  -webkit-transition: -webkit-box-flex 0.8s ease;
+  transition: -webkit-box-flex 0.8s ease;
+  transition: flex 0.8s ease;
+  transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
+}
+
+.item:hover {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+
+.item-1 {
+  background-image: url("../imgs/resource/granite.jpg");
+}
+
+.item-2 {
+  background-image: url("../imgs/resource/limestone.jpg");
+}
+
+.item-3 {
+  background-image: url("../imgs/resource/marble.jpg");
+}
+
+.item-4 {
+  background-image: url("../imgs/resource/quartz.jpg");
+}
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+}
+
+.social img {
+  display: block;
+  width: 32px;
+}
+
+.d-text-1, .d-text-2, .d-text-3, .d-text-4 {
+  display: none;
+}
+
+.overlay {
+  bottom: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #bfb5b5;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 1rem;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: inset var(--shadow);
+          box-shadow: inset var(--shadow);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+/*# sourceMappingURL=resources.css.map */
