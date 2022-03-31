@@ -13,7 +13,6 @@
 
 html, body {
   height: 100%;
-  background-color: white;
 }
 
 .container-wrap {
@@ -225,7 +224,7 @@ html, body {
 }
 
 .showcase p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 0;
   color: white;
 }
@@ -273,17 +272,9 @@ html, body {
   .info-sec {
     display: none;
   }
-}
-
-@media (max-width: 500px) {
-  /*
-  .top-container{
-    grid-template-areas: 
-    'showcase'
-     'box-a'   
-     'box-b';
+  .info-title {
+    text-align: center;
   }
-  */
 }
 
 .relief {
@@ -293,7 +284,7 @@ html, body {
   width: auto;
   text-align: center;
   background-image: url("/imgs/care/dirty.jpg");
-  height: 400px;
+  height: 600px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -310,7 +301,7 @@ html, body {
   -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   opacity: 0;
-  height: 400px;
+  height: 600px;
   width: 100%;
   padding: 130px 20px;
 }
@@ -399,7 +390,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  text-align: left;
   -webkit-box-shadow: inset -1px -4px 5px var(--graywater);
           box-shadow: inset -1px -4px 5px var(--graywater);
 }
@@ -420,6 +411,15 @@ hr {
           flex-direction: row;
   width: 100vw;
   height: auto;
+  font-size: 1rem;
+}
+
+.container-split .maintance-info-focus {
+  font-size: 1.1rem;
+}
+
+.container-split p {
+  font-size: .95rem;
 }
 
 .container-split div {
@@ -432,7 +432,7 @@ hr {
   transition: flex 0.5s ease-out, -webkit-box-flex 0.5s ease-out, -ms-flex 0.5s ease-out;
   color: white;
   font-family: sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 .container-split div h3 {
@@ -458,6 +458,7 @@ hr {
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 3em;
+  font-size: .9rem;
 }
 
 .container-split .left {

@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
 /* All CSS code related to navbar is here */
 .navbar{
     margin-top: 15px;
@@ -15,7 +17,11 @@
 }
 
 .nav-item a{
-    font-size: 1rem;
+    font-size: 1.1rem;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: 'DM Sans', sans-serif;
+
+
 }
 
 .menu ul li a {

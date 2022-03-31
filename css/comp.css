@@ -4,13 +4,8 @@
   --fontcolor:#084298;
   --graywater: #ebebeb;
   --bolder: #757575;
+  --about-p: #e9ecef;
   --shadow: 0 1px 4px rgba(104,104,104,0.8);
-}
-
-html,
-body {
-  place-items: center;
-  background-color: #F9FAFB;
 }
 
 .wrapper {
@@ -21,9 +16,8 @@ body {
 .welcome-top {
   background: #0001fe;
   background: linear-gradient(110deg, rgba(0, 1, 254, 0.989233) 9%, rgba(60, 86, 179, 0.751138) 42%);
-  color: #e9ecef;
-  line-height: 1.5;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--about-p);
+  line-height: 1.4;
 }
 
 @media (max-width: 600px) {
@@ -34,6 +28,10 @@ body {
 }
 
 .btn {
+  border-radius: 0;
+}
+
+.btn-light {
   width: 80px;
 }
 
@@ -54,12 +52,11 @@ body {
 .about-us h3 {
   font-weight: 600;
   white-space: nowrap;
-  font-size: clamp(2rem, 5vw, 4rem);
-  margin-bottom: .5rem;
+  font-size: clamp(2rem, 3vw, 4rem);
 }
 
 .about-us p {
-  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 .image-wrapper {
@@ -110,11 +107,12 @@ body {
 }
 
 .about-desc h3 {
-  color: var(--fontcolor);
+  color: var(--bolder);
 }
 
 .about-desc p {
-  color: var(--fontcolor);
+  color: var(--stormgray);
+  margin: .7em;
 }
 
 h1 {
